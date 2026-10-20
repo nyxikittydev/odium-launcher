@@ -1,0 +1,20 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.odium.launcher'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.odium.launcher'
+        minSdk 26
+        // 28 keeps package visibility open (no <queries> maze) for listing apps / resolving dock defaults.
+        targetSdk 28
+        versionCode 1
+        versionName '1.0.0'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    lint { abortOnError false; checkReleaseBuilds false }
+}

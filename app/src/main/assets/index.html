@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#08070b"><link rel="stylesheet" href="style.css"><title>Odium Launcher</title></head>
+<body>
+<div id="scrim"></div>
+<main id="home">
+ <header class="top"><div class="mark"><span class="cat" id="hcat"></span>odium</div><button id="gear" class="ib" aria-label="Settings"><svg viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg></button></header>
+ <div id="pager">
+  <section class="page dash">
+   <div class="hero"><div id="clock"><span id="hh"></span><span id="mm"></span></div>
+    <div class="side"><b id="ap"></b><div id="wd"></div><div id="dm"></div><div class="yr"><div><i id="yr"></i></div><small id="yl"></small></div></div></div>
+   <div class="wg" id="w-wx"><div id="wx"></div></div>
+   <div class="wg" id="w-week"><div id="shift"></div><div id="week"></div></div>
+   <div class="wg" id="w-focus"><div class="focus"><div id="ft"></div><div class="fb"><button id="fre" class="btn">Reset</button><button id="fgo" class="btn pri">Start</button></div></div><div class="trk"><i id="fp"></i></div></div>
+   <div class="wg" id="w-note"><textarea id="note" maxlength="240" placeholder="Jot something down…" spellcheck="false"></textarea><div class="nf"><span id="nc">0 / 240</span><span>Stays on this device</span></div></div>
+  </section>
+  <section class="page odm">
+   <div class="stage"><div class="cat big" id="bigcat"></div><b class="zz">z</b></div>
+   <p id="cap"></p>
+   <div class="stats"><div><b id="sb">--</b><small id="sbl">Battery</small></div><div><b id="sf">0</b><small>Focus today</small></div><div><b id="sp">0</b><small>Pets</small></div></div>
+   <div id="tiles"></div>
+  </section>
+ </div>
+ <div id="dots"></div>
+ <nav id="dock" aria-label="Dock"></nav>
+</main>
+<section id="drawer">
+ <div class="dh"><div><h2>All apps</h2><span id="app-count"></span></div><button id="close-drawer" class="ib" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></div>
+ <div id="search-wrap"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg><input id="search" type="text" placeholder="Search apps" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
+ <div id="grid"></div>
+</section>
+<section id="settings">
+ <div class="sbar"><button id="sback" class="ib" aria-label="Back"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button><h1>Settings</h1></div>
+ <div id="sbody"></div>
+</section>
+<div id="sheet-bg"></div><div id="sheet"></div>
+<script src="app.js"></script>
+</body></html>
