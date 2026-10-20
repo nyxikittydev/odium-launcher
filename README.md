@@ -280,5 +280,3 @@ Landscape mode, folders, icon packs, notification badges, and hosting Android wi
 ---
 
 <div align="center"><sub>odium · black, red, and a cat</sub></div>
-#   o d i u m - l a u n c h e r  
- 
